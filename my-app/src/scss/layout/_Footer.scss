@@ -1,0 +1,35 @@
+.footer {
+  background-color: $footer-bg-color;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: $footer-height;
+  justify-content: center;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__profile{
+  display: grid;
+}
+
+.info {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    height: $footer-height + 350px;
+  }
+}
