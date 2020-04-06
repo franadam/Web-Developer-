@@ -1,0 +1,10 @@
+.header {
+  align-items: center;
+  background-color: hsl(0, 80%, 10%);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: $header-height;
+  justify-content: center;
+  width: 100%;
+}

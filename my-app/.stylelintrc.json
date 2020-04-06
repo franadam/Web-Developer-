@@ -2,10 +2,13 @@
     "env": {
         "browser": true
     },
-    "extends": "stylelint-config-recommended",
+    "extends":  "stylelint-config-standard",
     "plugins": [
       "stylelint-scss",
       "stylelint-order"
+    ],
+    "ignoreFiles": [
+        "src/scss/vendor/**/*.scss"
     ],
     "rules": {
       "number-leading-zero": null,

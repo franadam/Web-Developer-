@@ -1,0 +1,39 @@
+.navbar {
+  background: $greenscale-color--base;
+  box-shadow: 0 5px 5px rgb(68, 68, 68);
+  grid-gap: 10px;
+  grid-template-areas: 'navbarLogo navbarNav';
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  & a {
+    color: $white;
+    //display: inline-block;
+    float: right;
+    justify-content: end;
+    padding: 15px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: hsla(30, 100%, 50%, 0.5);
+      border-radius: $border-radius;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    & a {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

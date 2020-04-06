@@ -1,4 +1,12 @@
-.App {
+@import './utils/variables';
+@import './base/base';
+@import './vendor/fontawesome/scss/fontawesome';
+@import './vendor/fontawesome/scss/solid';
+@import './vendor/fontawesome/scss/brands';
+@import './layout/Header';
+@import './layout/Navbar';
+
+.app {
   text-align: center;
 }
 
@@ -14,14 +22,14 @@
 }
 
 .App-header {
+  align-items: center;
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .App-link {
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

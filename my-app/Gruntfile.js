@@ -29,8 +29,9 @@ module.exports = function (grunt) {
             options: {
               map: true,
               processors: [
-                require('pixrem')(), // add fallbacks for rem units
-                require('autoprefixer')(), // add vendor prefixes
+                require('postcss-sorting')
+                //require('pixrem')(), // add fallbacks for rem units
+                //require('autoprefixer')(), // add vendor prefixes
                 //require('cssnano')() // minify the result
               ]
             },
@@ -40,11 +41,11 @@ module.exports = function (grunt) {
           },
         watch: {
             files: ['Gruntfile.js','src/components/*.js','src/scss/**/*.scss'],
-            tasks: ['eslint', 'stylelint','sasslint']
+            tasks: ['eslint', 'stylelint']//,'sasslint','postcss']
         }
     });
 
     grunt.registerTask('default', ['eslint','stylelint','sasslint']);
-    grunt.registerTask('postprocess', ['postcss']);
+    grunt.registerTask('postprocess', ['postcss']); //npx stylelint src/scss/**/*.scss --fix
 };
 

@@ -1,0 +1,29 @@
+
+html,
+body {
+  background: $page-bg-color;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  justify-content: center;
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+i {
+  color: #fff;
+}
