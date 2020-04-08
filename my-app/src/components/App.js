@@ -2,6 +2,7 @@ import React from 'react'
 import '../scss/App.scss'
 import Header from './Header'
 import Navbar from './Navbar'
+import Container from './Container'
 import Footer from './Footer'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -15,6 +16,7 @@ function App () {
     <div className="app">
       <Header />
       <Navbar />
+      <Container />
       <Footer />
     </div>
   )

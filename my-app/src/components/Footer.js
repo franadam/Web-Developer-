@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Icon, InlineIcon } from '@iconify/react'
+import { Icon } from '@iconify/react'
 import codewarsIcon from '@iconify/icons-simple-icons/codewars'
 
 function Footer () {
