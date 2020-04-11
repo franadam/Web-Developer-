@@ -13,44 +13,70 @@
 
   &__navigation-container {
     display: flex;
-    height: 100%;
-    justify-content: space-evenly;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    align-content: center;  
+    justify-content: space-around;
     //position: absolute;
     //top: 30%;
     width: 100%;
+    border: 1px solid blue;
     //margin-left: auto;
     //margin-right: auto;
+  }
+
+  &__btn{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: $border-radius;
+
+  }
+
+  &__caption-number{
+    @extend .carousel__btn;
+
+    border-radius: $border-radius;
+    padding: 5px;
+    position: relative;
+    top: 50px;
+    background-color: rgba(0, 0, 0, .4);
   }
 }
 
 .img-carousel {
-  height: auto;
   //display: flex;
-  margin-left: 25%;
-  margin-right: auto;
-  padding: 15px;
-  width: 50%;
+  //margin-left: 25%;
+  //margin-right: auto;
+  //display:grid;
+  //justify-content: center;
+  //align-content: center;  
+  padding: 0;
+  width: 100%;
+  height: 200px ;
+  transition: 0.3s;
+  
+  &:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4), 0 6px 20px 0 rgba(0, 0, 0, .4);
+  }
 }
 
 .navbutt {
   //margin:20px;
   @extend %fa-icon;
   @extend .fas;
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 0 3px 3px 0;
-  color: white;
+  @extend .carousel__btn;
+  
   cursor: pointer;
-  font-weight: bold;
+  border-radius: $border-radius 0 0 $border-radius;
+  //position: relative;
   //top: 50%;
-  //width: auto;
-  //margin-top: -22px;
-  padding: 5px;
-  position: relative;
-  top: -145px;
   //font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
 
   &--backward {
     left: 31px;
@@ -61,15 +87,11 @@
   }
 
   &--play {
-    border-radius: 3px;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: -50px;
+    border-radius: $border-radius;
   }
 
   &--forward {
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 $border-radius $border-radius 0;
     right: 0;
 
     &::before {
@@ -117,49 +139,21 @@
   background-color: #717171;
 }
 
-.slideshow-simple {
-  margin: 0 auto;
-  text-align: centear;
-  width: 900px;
+.project-tile{
+  //background-color: rgba(0, 225, 255, 0.2);
+  //margin:20px;
+  padding:20px;
+  color:white;
+  display:grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;  
+  width: 50%;
+  border-radius: $border-radius;
 }
 
-.item-slide h1 {
-  text-transform: uppercase;
-}
-
-.wrap-control {
-  .btn {
-    cursor: pointer;
-    margin: 0 5px;
-    width: 80px;
-  }
-}
-
-.clearfix::after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  width: 0;
-}
-
-.indicators {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-
-  li {
-    background: white;
-    border: 2px solid blue;
-    border-radius: 50%;
-    cursor: pointer;
-    display: inline-block;
-    height: 25px;
-    margin: 0 10px;
-    width: 25px;
-
-    &.active {
-      background: #717171;
-    }
-  }
+.project-image{
+  display: block;   
+ width: 100%;//
+  height: auto;  
 }

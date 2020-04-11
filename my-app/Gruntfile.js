@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-postcss');
 
     grunt.initConfig({
-        eslint: {
+        eslint: { //npx eslint src/components/*.js --fix
             options: {
                 configFile: '.eslintrc.json',
                 fix: true
@@ -46,6 +46,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['eslint','stylelint','sasslint']);
-    grunt.registerTask('postprocess', ['postcss']); //npx stylelint src/scss/**/*.scss --fix
+    grunt.registerTask('postprocess', ['postcss']); //npx stylelint src/scss/**/*.scss --fix 
 };
 
