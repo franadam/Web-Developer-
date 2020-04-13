@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/placeholders';
 @import './base/tag';
 @import './base/myFont';
 @import './vendor/fontawesome/scss/fontawesome';
@@ -7,6 +8,7 @@
 @import './layout/Header';
 @import './layout/Navbar';
 @import './layout/Carousel';
+@import './layout/Container';
 @import './layout/Footer';
 
 .app {

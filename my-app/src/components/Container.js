@@ -1,8 +1,6 @@
 import React from 'react'
+import Introduction from './Introduction'
 import Carousel from './Carousel'
-
-const imagesRef = [
-  { href: 'https://codepen.io/franadam/full/qBBwRKZ', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FDocumentation.png' }, { href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' }, { href: 'https://codepen.io/franadam/full/Exjgoag', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Dot%20Graph.png' }, { href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' }, { href: 'https://codepen.io/franadam/full/WNbJvQz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FMarkdown%20Preview.png' }, { href: 'https://codepen.io/franadam/full/WNNmqoy', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FProduct.png' }, { href: 'https://codepen.io/franadam/full/BaabPJx', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FForm.png' }]
 
 class Container extends React.Component {
   constructor (props) {
@@ -20,9 +18,10 @@ class Container extends React.Component {
 
   render () {
     return (
-      <div className='container'>
-        <Carousel
-          slide={imagesRef[0]}/>
+      <div className='container' id='container'>
+        <h2 style={{ gridArea: 'title' }}>These are some of my projects </h2>
+        <Introduction />
+        <Carousel />
       </div>
     )
   }

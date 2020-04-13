@@ -5,8 +5,8 @@ function Navbar () {
 
     <div className='navbar' id='navbar'>
       <a href="#welcome-section">About</a>
-      <a href='#main'>Work</a>
-      <a href='#contact'>Contact</a>
+      <a href='#container'>Work</a>
+      <a href='#footer'>Contact</a>
     </div>
 
   )

@@ -2,22 +2,28 @@ import React from 'react'
 var INTER = 4000
 
 const imagesRef = [
-  { href: 'https://codepen.io/franadam/full/qBBwRKZ', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FDocumentation.png' }, { href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' }, { href: 'https://codepen.io/franadam/full/Exjgoag', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Dot%20Graph.png' }, { href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' }, { href: 'https://codepen.io/franadam/full/WNbJvQz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FMarkdown%20Preview.png' }, { href: 'https://codepen.io/franadam/full/WNNmqoy', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FProduct.png' }, { href: 'https://codepen.io/franadam/full/BaabPJx', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FForm.png' }]
+  { title: 'Documentation', href: 'https://codepen.io/franadam/full/qBBwRKZ', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FDocumentation.png' },
+  { title: 'Chart', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
+  { title: 'Graph', href: 'https://codepen.io/franadam/full/Exjgoag', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Dot%20Graph.png' },
+  { title: 'Random Quote Machine', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
+  { title: 'Markdown', href: 'https://codepen.io/franadam/full/WNbJvQz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FMarkdown%20Preview.png' },
+  { title: 'Product page', href: 'https://codepen.io/franadam/full/WNNmqoy', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FProduct.png' },
+  { title: 'Form', href: 'https://codepen.io/franadam/full/BaabPJx', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FForm.png' }]
 
 function SlideItem (props) {
   return (
 
     <div className='carousel' id='carousel' tabIndex="0">
 
-      <h1>These are some of my projects </h1>
-
       <div className='project-tile text-center'>
-        <h2>{props.title}</h2>
+
         <div className="carousel__caption-number text-center">{(props.currentSlide + 1)}/{imagesRef.length}</div>
 
         <a href={props.slide.href} target="_blank" rel="noopener noreferrer">
           <img id={'img-p' + props.currentSlide} alt={'slide-' + props.currentSlide} className='img-carousel' src={props.slide.src}/>
         </a>
+
+        <p className="carousel__caption-text text-center">{props.slide.title}</p>
 
         <div className='carousel__navigation-container'>
 
@@ -39,23 +45,7 @@ function SlideItem (props) {
           />)}
       </div>
 
-      <div className="carousel__caption-text text-center">Caption Text</div>
-
     </div>
-  )
-}
-
-function OneSlide () {
-  return (
-
-    <div className='project-tile text-center'>
-      <p>D3 Bar Chart</p>
-      <a href="https://codepen.io/franadam/pen/Exjgoag"
-        target="_blank">
-        <img id="img-p7" className="project-image" src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png"/>
-      </a>
-    </div>
-
   )
 }
 
@@ -63,7 +53,7 @@ class Carousel extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      slideshow: props.slide,
+      slideshow: imagesRef[0],
       slideIndex: 0
     }
     this.currentIndex = 0
@@ -170,19 +160,13 @@ class Carousel extends React.Component {
           break
 
         case 37: // left
+        case 40: // down
           that.backward()
           break
 
         case 38: // up
-          that.forward()
-          break
-
         case 39: // right
           that.forward()
-          break
-
-        case 40: // down
-          that.backward()
           break
 
         default: return
@@ -196,7 +180,6 @@ class Carousel extends React.Component {
     return (
       <div className="slideshow-simple">
         <SlideItem
-          title={this.state.slideshow.href}
           slide={this.state.slideshow}
           currentSlide={this.state.slideIndex}
           auto={this.auto}
