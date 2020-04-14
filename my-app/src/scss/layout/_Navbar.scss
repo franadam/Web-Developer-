@@ -1,16 +1,20 @@
 .navbar {
-  background: $greenscale-color--base;
-  box-shadow: 0 5px 5px rgb(68, 68, 68);
-  grid-gap: 10px;
-  grid-template-areas: 'navbarLogo navbarNav';
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  //background: $greenscale-color--base;
+
+  //grid-gap: 10px;
+  //grid-template-areas: 'navbarLogo navbarNav';
+  //grid-template-columns: 1fr 2fr;
+  //grid-template-rows: 1fr;
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+
+  &:hover {
+    box-shadow: 0 5px 5px rgb(68, 68, 68);
+  }
 
   & a {
     color: $white;
@@ -32,6 +36,7 @@
     & a {
       display: block;
       justify-content: center;
+      padding: 5px;
       text-align: center;
       width: 100%;
     }

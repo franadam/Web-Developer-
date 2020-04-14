@@ -1,4 +1,5 @@
 import React from 'react'
+import Introduction from './Introduction'
 var INTER = 4000
 
 const imagesRef = [
@@ -178,7 +179,9 @@ class Carousel extends React.Component {
 
   render () {
     return (
-      <div className="slideshow-simple">
+      <div className='carousel-container'>
+        <h2 style={{ gridArea: 'title' }}>These are some of my projects </h2>
+        <Introduction />
         <SlideItem
           slide={this.state.slideshow}
           currentSlide={this.state.slideIndex}

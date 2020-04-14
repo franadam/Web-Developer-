@@ -7,7 +7,10 @@
 @import './vendor/fontawesome/scss/brands';
 @import './layout/Header';
 @import './layout/Navbar';
+@import './layout/Skills';
+@import './layout/Introduction';
 @import './layout/Carousel';
+@import './layout/Contact';
 @import './layout/Container';
 @import './layout/Footer';
 
@@ -15,7 +18,7 @@
   display: block;
   min-height: 100vh;
   overflow: auto;
-  padding-bottom: $footer-height + 50px;
+  padding-bottom: $footer-height + 20px;
   position: relative;
 }
 

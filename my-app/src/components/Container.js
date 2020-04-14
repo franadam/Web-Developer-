@@ -1,13 +1,13 @@
 import React from 'react'
-import Introduction from './Introduction'
+import Skills from './Skills'
 import Carousel from './Carousel'
+import Contact from './Contact'
 
 class Container extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      idx: 0,
-      rolling: true
+      idx: 0
     }
     // this.handleChange = this.handleChange.bind(this)
     // this.handleSubmit = this.handleSubmit.bind(this)
@@ -19,9 +19,9 @@ class Container extends React.Component {
   render () {
     return (
       <div className='container' id='container'>
-        <h2 style={{ gridArea: 'title' }}>These are some of my projects </h2>
-        <Introduction />
+        <Skills />
         <Carousel />
+        <Contact />
       </div>
     )
   }

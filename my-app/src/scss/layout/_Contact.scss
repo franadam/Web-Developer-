@@ -1,0 +1,49 @@
+.contact {
+  background-color: pink;
+  border: 6px solid $redscale-color--ligth;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'contact-header contact-header' 'contact-info contact-form';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+  margin: 0;
+  padding: 10px;
+
+  &__header {
+    grid-area: contact-header;
+  }
+
+  &__info {
+    display: grid;
+    grid-area: contact-info;
+  }
+
+  &__container-form {
+    display: grid;
+    grid-area: contact-form;
+  }
+}
+
+.info__mail {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    grid-gap: 5px;
+    grid-template-areas: 'contact-header' 'contact-info' 'contact-form';
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+  }
+
+  .info__mail {
+    display: grid;
+    grid-gap: 5px;
+  }
+}
