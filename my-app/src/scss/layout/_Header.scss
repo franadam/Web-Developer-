@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  background-color: hsl(0, 80%, 10%);
+  background-color: $header-bg-color;
   color: $white;
   display: flex;
   flex-direction: column;

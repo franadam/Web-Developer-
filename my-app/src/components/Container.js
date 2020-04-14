@@ -1,6 +1,6 @@
 import React from 'react'
 import Skills from './Skills'
-import Carousel from './Carousel'
+import Works from './Works'
 import Contact from './Contact'
 
 class Container extends React.Component {
@@ -20,7 +20,7 @@ class Container extends React.Component {
     return (
       <div className='container' id='container'>
         <Skills />
-        <Carousel />
+        <Works />
         <Contact />
       </div>
     )

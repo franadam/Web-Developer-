@@ -5,8 +5,8 @@ function Navbar () {
 
     <div className='navbar' id='navbar'>
       <a href="#welcome-section">About</a>
-      <a href='#container'>Skills</a>
-      <a href='#container'>Work</a>
+      <a href='#skills'>Skills</a>
+      <a href='#works'>Work</a>
       <a href='#contact'>Contact</a>
     </div>
 

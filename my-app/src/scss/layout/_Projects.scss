@@ -1,0 +1,38 @@
+.projects {
+  border: 6px solid red;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 10px;
+
+  &__gallery {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    padding: 10px;
+  }
+}
+
+.project-image {
+  display: block;
+  height: auto;
+  max-height: 80%;
+  width: 100%;//
+}
+
+.project-title {
+  align-content: center;
+  background-color: $header-bg-color;
+  color: white;
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+
+  &:hover {
+    background-color: $redscale-color--ligth;
+  }
+}

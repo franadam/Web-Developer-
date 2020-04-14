@@ -16,7 +16,7 @@ function SlideItem (props) {
 
     <div className='carousel' id='carousel' tabIndex="0">
 
-      <div className='project-tile text-center'>
+      <div className='img-container text-center'>
 
         <div className="carousel__caption-number text-center">{(props.currentSlide + 1)}/{imagesRef.length}</div>
 
@@ -180,7 +180,7 @@ class Carousel extends React.Component {
   render () {
     return (
       <div className='carousel-container'>
-        <h2 style={{ gridArea: 'title' }}>These are some of my projects </h2>
+        <h3 style={{ gridArea: 'carousel-title' }}>These are some of my FreecodeCamp projects </h3>
         <Introduction />
         <SlideItem
           slide={this.state.slideshow}
