@@ -1,0 +1,18 @@
+.img {
+  padding: 0;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4), 0 6px 20px 0 rgba(0, 0, 0, .4);
+  }
+
+  &--carousel {
+    height: 300px;
+    width: 100%;
+  }
+
+  &--project {
+    height: 70%;
+    width: 100%;
+  }
+}

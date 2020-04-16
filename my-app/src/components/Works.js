@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from './Carousel'
 import Projects from './Projects'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Works () {
   return (

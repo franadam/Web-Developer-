@@ -16,12 +16,12 @@ function SlideItem (props) {
 
     <div className='carousel' id='carousel' tabIndex="0">
 
-      <div className='img-container text-center'>
+      <div className='carousel__img-container text-center'>
 
         <div className="carousel__caption-number text-center">{(props.currentSlide + 1)}/{imagesRef.length}</div>
 
         <a href={props.slide.href} target="_blank" rel="noopener noreferrer">
-          <img id={'img-p' + props.currentSlide} alt={'slide-' + props.currentSlide} className='img-carousel' src={props.slide.src}/>
+          <img id={'img-c' + props.currentSlide} alt={'slide-' + props.currentSlide} className='img img--carousel' src={props.slide.src}/>
         </a>
 
         <p className="carousel__caption-text text-center">{props.slide.title}</p>
@@ -181,7 +181,14 @@ class Carousel extends React.Component {
     return (
       <div className='carousel-container'>
         <h3 style={{ gridArea: 'carousel-title' }}>These are some of my FreecodeCamp projects </h3>
-        <Introduction />
+
+        <Introduction
+          slide={this.state.slideshow}
+          currentSlide={this.state.slideIndex}
+          changeSlide={this.changeSlide}
+          handleKeys={this.handleKeys}
+        />
+
         <SlideItem
           slide={this.state.slideshow}
           currentSlide={this.state.slideIndex}

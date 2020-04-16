@@ -1,0 +1,14 @@
+.btn {
+  background-color: $greenscale-color--base;
+  border-radius: $border-radius;
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    background-color: $greenscale-color--dark;
+  }
+
+  &--active {
+    background-color: $greenscale-color--dark;
+  }
+}
