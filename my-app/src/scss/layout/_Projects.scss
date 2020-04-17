@@ -26,7 +26,6 @@
 }
 
 .project-title {
-  //border: 3px solid #ccc;
   align-content: center;
   background-color: $header-bg-color;
   color: white;
@@ -34,11 +33,13 @@
   justify-content: center;
   margin: 0;
   padding: 5px;
+  position: relative;
   transition: $transition;
   width: 100%;
 
-  &:hover {
-    background-color: $redscale-color--ligth;
+  &:hover .overlay {
+    display: flex;
+    height: 100%;
   }
 }
 
