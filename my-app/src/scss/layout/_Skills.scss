@@ -1,5 +1,73 @@
 .skills {
-  background-color: $bluescale-color--ligth;
   border: 6px solid blue;
+  display: grid;
+  font: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  grid-gap: 10px;
+  justify-items: center;
   margin: 0;
+  padding: 20px;
+}
+
+.skillbar {
+  background-color: #ddd;
+  position: relative;
+  top: 0;
+  width: 80%;
+
+  &__title {
+    background-color: $primary-color--ligth;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+
+    & span {
+      align-items: center;
+      align-self: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      //background:rgba(0, 0, 0, 0.1);
+      padding: 0 20px;
+    }
+  }
+
+  &__percent {
+    background-color: $primary-color--dark;
+    color: white;
+    padding: 10px 0;
+    text-align: right;
+
+    &.html {
+      //background-color: #4caf50;
+      width: 90%;
+    }
+
+    &.css {
+      //background-color: #2196f3;
+      width: 80%;
+    }
+
+    &.js {
+      //background-color: #f44336;
+      width: 65%;
+    }
+
+    &.php {
+      //background-color: #808080;
+      width: 60%;
+    }
+
+    &.react {
+      //background-color: #f44336;
+      width: 65%;
+    }
+
+    &.d3 {
+      //background-color: #808080;
+      width: 60%;
+    }
+  }
 }
