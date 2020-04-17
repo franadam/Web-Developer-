@@ -4,7 +4,7 @@ import React from 'react'
 function Skills () {
   return (
     <div className='skills' id='skills'>
-      <h2>Skills</h2>
+      <h2 style={{ justifySelf: 'center' }}>Skills</h2>
 
       <div className="skillbar">
         <div className="skillbar__title">
@@ -17,28 +17,28 @@ function Skills () {
         <div className="skillbar__title">
           <span>CSS</span>
         </div>
-        <div className="skillbar__percent css" style={{ width: '70%' }}>80%</div>
+        <div className="skillbar__percent css">80%</div>
       </div>
 
       <div className="skillbar">
         <div className="skillbar__title">
           <span>JavaScript</span>
         </div>
-        <div className="skillbar__percent js">65%</div>
+        <div className="skillbar__percent js">75%</div>
       </div>
 
       <div className="skillbar">
         <div className="skillbar__title">
           <span>PHP</span>
         </div>
-        <div className="skillbar__percent php">60%</div>
+        <div className="skillbar__percent php">50%</div>
       </div>
 
       <div className="skillbar">
         <div className="skillbar__title">
           <span>React</span>
         </div>
-        <div className="skillbar__percent react">60%</div>
+        <div className="skillbar__percent react">70%</div>
       </div>
 
       <div className="skillbar">
