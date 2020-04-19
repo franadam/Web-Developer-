@@ -6,10 +6,26 @@
   flex-direction: column;
   height: $header-height;
   justify-content: center;
+
+  &__title {
+    transform: translate(-20vw, 8vh) rotate(-45deg);
+  }
+
+  &__link {
+    & a {
+      padding: 15px;
+
+      &:hover {
+        background-color: $redscale-color--base;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
-.header__link {
-  & a {
-    padding: 10px;
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 70px;
+    transform: translate(0, 0) rotate(0);
   }
 }

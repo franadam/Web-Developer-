@@ -1,0 +1,30 @@
+.contact-form {
+  width: 100%;
+
+  & input,
+  & textarea {
+    border: 1px solid $redscale-color--dark;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    color: $redscale-color--dark;
+    display: table-cell;
+    margin: 6px 0 16px 0;
+    padding: 12px;
+    width: 100%;
+  }
+
+  &__name {
+    display: flex;
+    grid-gap: 10px;
+  }
+
+  .invalid {
+    background-color: rgb(255, 221, 221);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-form__name {
+    display: block;
+  }
+}

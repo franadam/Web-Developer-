@@ -1,5 +1,6 @@
 .skills {
-  border: 6px solid blue;
+  background-color: $greenscale-color--pastel;
+  //border: 6px solid blue;
   display: grid;
   font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   grid-gap: 10px;
@@ -44,7 +45,6 @@
     color: white;
     padding: 10px 0;
     text-align: right;
-
 
     &.html {
       animation-duration: 3s;

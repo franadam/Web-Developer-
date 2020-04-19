@@ -1,6 +1,6 @@
 $page-bg-color: rgb(255, 253, 228);
 $footer-bg-color: #272e71;
-$header-bg-color: hsl(0, 80%, 10%);
+$header-bg-color: hsl(0, 80%, 20%);
 $white: #fff;
 $black: #000;
 $primary-color--base: hsl(47, 70%, 45%);
@@ -11,12 +11,13 @@ $primary-color--pastel: hsla(47, 20%, 50%, 1);
 $greenscale-color--base:  hsla(122, 50%, 49%, .8);
 $greenscale-color--ligth: hsl(122, 60%, 49);
 $greenscale-color--dark: hsl(122, 90%, 30);
+$greenscale-color--pastel: hsl(122, 44%, 71%);
 $bluescale-color--base: hsla(195, 100%, 50%, .8);
 $bluescale-color--ligth: hsl(195, 100%, 70%);
 $bluescale-color--dark: hsl(195.06, 100%, 30%);
-$redscale-color--base: hsla(0, 100%, 50%, .8);
+$redscale-color--base: hsla(0, 100%, 50%, .5);
 $redscale-color--ligth: hsl(0, 100%, 70%);
-$redscale-color--dark: hsl(0, 100%, 30%);
+$redscale-color--dark: hsla(0, 100%, 30%, .7);
 
 $header-height: 100vh;
 $navbar-height: 10px;

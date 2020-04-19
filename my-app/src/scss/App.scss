@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './utils/placeholders';
-@import './base/tag';
 @import './base/myFont';
+@import './base/tag';
 @import './vendor/fontawesome/scss/fontawesome';
 @import './vendor/fontawesome/scss/solid';
 @import './vendor/fontawesome/scss/brands';
@@ -14,6 +14,7 @@
 @import './layout/Carousel';
 @import './layout/Works';
 @import './layout/Projects';
+@import './layout/Form';
 @import './layout/Contact';
 @import './layout/Container';
 @import './layout/Footer';
@@ -22,18 +23,18 @@
   display: block;
   min-height: 100vh;
   overflow: auto;
-  padding-bottom: $footer-height + 20px;
+  padding-bottom: $footer-height;
   position: relative;
 }
 
 @media screen and (max-width: 700px) {
   .app {
-    padding-bottom: $footer-height + 250px;
+    padding-bottom: $footer-height;
   }
 }
 
 @media screen and (max-width: 400px) {
   .app {
-    padding-bottom: $footer-height + 400px;
+    padding-bottom: $footer-height + 350px;
   }
 }

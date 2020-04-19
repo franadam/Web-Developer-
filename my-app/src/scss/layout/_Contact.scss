@@ -1,28 +1,45 @@
 .contact {
-  background-color: pink;
-  border: 6px solid $redscale-color--ligth;
+  background-color: $redscale-color--dark;
+  //border: 6px solid $redscale-color--ligth;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0;
   grid-template-areas: 'contact-header contact-header' 'contact-info contact-form';
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 100px 1fr;
   margin: 0;
-  padding: 10px;
 
   &__header {
     grid-area: contact-header;
+    height: 100%;
+    margin: 0;
+    padding-top: 25px;
   }
 
   &__info {
-    background-color: hsla(0, 100%, 50%, .2);
+    background-color: rgba($color: #000, $alpha: .1);
+    border-radius: $border-radius;
     color: $white;
     display: grid;
     grid-area: contact-info;
+    margin: 0;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  & .icon-container {
+    color: $redscale-color--dark;
+    //text-shadow: none;
+    //background-color: $redscale-color--dark;
   }
 
   &__container-form {
+    background-color: hsla(350, 100%, 88%, .8);
+    border-radius: $border-radius;
     display: grid;
     grid-area: contact-form;
+    margin: 15px;
+    padding: 10px;
+    //border: 16px solid pink;
   }
 }
 

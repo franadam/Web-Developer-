@@ -1,4 +1,5 @@
 .img {
+  border-radius: $border-radius;
   padding: 0;
   transition: $transition;
 
@@ -21,6 +22,7 @@
   align-items: center;
   align-self: center;
   background-color: hsla(195, 100%, 36%, .9);
+  border-radius: $border-radius;
   bottom: 0;
   color: #fff;
   display: none;

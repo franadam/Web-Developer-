@@ -11,4 +11,15 @@
   &--active {
     background-color: $greenscale-color--dark;
   }
+
+  &--form {
+    background-color: $redscale-color--dark;
+    border: none;
+    color: $white;
+    justify-self: right;
+
+    &:hover {
+      background-color: $redscale-color--ligth;
+    }
+  }
 }
