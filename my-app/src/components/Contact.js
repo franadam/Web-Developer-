@@ -12,20 +12,16 @@ function Contact () {
         </div>
         <div className='info__mail'>
           <div>
-            <div className='icon-container'>
-              <FontAwesomeIcon icon={['fas', 'map-marked-alt']} size="2x" />
-              <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Address</h3>
-            </div>
+            <FontAwesomeIcon icon={['fas', 'map-marked-alt']} size="2x" />
+            <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Address</h3>
             <p className='text-start'>Charlemagne building <br/>
               Rue de la Loi 170 <br/>
               1040 Brussels <br/>
               Belgium</p>
           </div>
           <div>
-            <div className='icon-container'>
-              <FontAwesomeIcon icon={['fas', 'envelope']} size="2x" />
-              <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Phone</h3>
-            </div>
+            <FontAwesomeIcon icon={['fas', 'phone']} size="2x" />
+            <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Phone</h3>
             <p>00 800 67 89 10 11</p>
           </div>
         </div>
