@@ -1,4 +1,14 @@
 .intro {
-  border: 6px solid red;
-  grid-area: carousel-text;
+
+  &__header {
+    grid-area: intro-header;
+  }
+
+  &__description {
+  grid-area: intro-description;
+  text-align: justify;
+  padding: 5% 10%;
+}
+
+
 }

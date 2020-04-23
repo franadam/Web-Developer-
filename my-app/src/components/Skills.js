@@ -3,8 +3,8 @@ import React from 'react'
 
 function Skills () {
   return (
-    <div className='skills' id='skills'>
-      <h2 style={{ justifySelf: 'center' }}>Skills</h2>
+    <div className='about__skills' id='skills'>
+      <h3 style={{ justifySelf: 'center' }}>Skills</h3>
 
       <div className="skillbar">
         <div className="skillbar__title">

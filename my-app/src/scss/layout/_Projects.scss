@@ -1,7 +1,7 @@
 .projects {
-  border: 6px solid red;
+  //border: 6px solid red;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   padding: 10px;
   text-align: center;
 
@@ -13,7 +13,7 @@
   }
 
   &__gallery {
-    border: 3px solid #ccc;
+    //border: 3px solid #ccc;
     display: grid;
     grid-gap: 2%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 250px));

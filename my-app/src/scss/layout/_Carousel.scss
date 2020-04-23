@@ -12,7 +12,7 @@
 
 .carousel {
   align-items: center;
-  border: 6px solid red;
+  //border: 6px solid red;
   display: grid;
   grid-area: carousel-images;
   justify-items: center;
@@ -27,7 +27,6 @@
 
   &__navigation-container {
     align-content: center;
-    border: 1px solid blue;
     display: flex;
     height: auto;
     justify-content: space-around;
@@ -114,6 +113,20 @@
 .active,
 .dot:hover {
   background-color: #717171;
+}
+
+.description {
+  //border: 6px solid red;
+  grid-area: carousel-text;
+
+  &__header {
+    font-size: 15px;
+  }
+
+  &__text {
+    text-align: justify;
+    padding: 5% 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {

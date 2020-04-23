@@ -1,15 +1,10 @@
 import React from 'react'
-import Introduction from './Introduction'
 var INTER = 4000
 
 const imagesRef = [
-  { title: 'Documentation', href: 'https://codepen.io/franadam/full/qBBwRKZ', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FDocumentation.png' },
-  { title: 'Chart', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
-  { title: 'Graph', href: 'https://codepen.io/franadam/full/Exjgoag', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Dot%20Graph.png' },
-  { title: 'Random Quote Machine', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
-  { title: 'Markdown', href: 'https://codepen.io/franadam/full/WNbJvQz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FMarkdown%20Preview.png' },
-  { title: 'Product page', href: 'https://codepen.io/franadam/full/WNNmqoy', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FProduct.png' },
-  { title: 'Form', href: 'https://codepen.io/franadam/full/BaabPJx', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FForm.png' }]
+  { title: 'Chart', description: 'This bar chart uses D3 to plot US GDP through the years.', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
+  { title: 'Random Quote Machine', description: 'The goals of this project is to be able to fetch random quote from a public api and display them on our page.', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
+  { title: 'Dashboard', description: 'The goal of this project is to create a dashboard with which the user can manage his account. In this scenario, the form used to modify the user profile information has to be created. The form contains two tabs, as specified below and shown in the picture.', href: 'https://eloquent-aryabhata-f6b832.netlify.app', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png' }]
 
 function SlideItem (props) {
   return (
@@ -47,6 +42,17 @@ function SlideItem (props) {
       </div>
 
     </div>
+  )
+}
+
+function SlideDescription (props) {
+  return (
+
+    <div className='description' id='description'>
+      <h3 className="description__header">{props.slide.title}</h3>
+      <p className='description__text'>{props.slide.description}</p>
+    </div>
+
   )
 }
 
@@ -180,9 +186,9 @@ class Carousel extends React.Component {
   render () {
     return (
       <div className='carousel-container'>
-        <h3 style={{ gridArea: 'carousel-title' }}>These are some of my FreecodeCamp projects </h3>
+        <h3 style={{ gridArea: 'carousel-title' }}>These are some of my projects </h3>
 
-        <Introduction
+        <SlideDescription
           slide={this.state.slideshow}
           currentSlide={this.state.slideIndex}
           changeSlide={this.changeSlide}

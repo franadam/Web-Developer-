@@ -1,5 +1,5 @@
 import React from 'react'
-import Skills from './Skills'
+import About from './About'
 import Works from './Works'
 import Contact from './Contact'
 
@@ -19,7 +19,7 @@ class Container extends React.Component {
   render () {
     return (
       <div className='container' id='container'>
-        <Skills />
+        <About />
         <Works />
         <Contact />
       </div>

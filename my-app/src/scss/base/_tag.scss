@@ -47,7 +47,9 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-  h2,
+  h2{
+    font-size: 1.8em;
+  }
   h3 {
     font-size: 1.4em;
   }
