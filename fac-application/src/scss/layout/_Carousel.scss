@@ -116,16 +116,19 @@
 }
 
 .description {
+  background-color: hsla(120, 100%, 25%, .1);
+  border-radius: $border-radius;
   //border: 6px solid red;
   grid-area: carousel-text;
 
   &__header {
     font-size: 15px;
+    padding-top: 2em;
   }
 
   &__text {
-    text-align: justify;
     padding: 5% 10%;
+    text-align: justify;
   }
 }
 

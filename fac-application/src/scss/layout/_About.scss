@@ -1,0 +1,27 @@
+.about {
+  background-color: $greenscale-color--pastel;
+  display: grid;
+  grid-template-areas: 'about-header about-header' 'about-description about-skills';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 1fr;
+
+  &__header {
+    grid-area: about-header;
+  }
+
+  &__description {
+    grid-area: about-description;
+    padding: 5% 10%;
+    text-align: justify;
+  }
+
+  &__skills {
+    display: grid;
+    font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    grid-area: about-skills;
+    grid-gap: 10px;
+    justify-items: right;
+    margin: 0;
+    padding: 20px;
+  }
+}
