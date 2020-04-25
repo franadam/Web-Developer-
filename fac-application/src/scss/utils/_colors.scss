@@ -1,0 +1,25 @@
+$primary-color--dark: darken($primary-color--base, 10%);
+$primary-color--darker: darken($primary-color--base, 30%);
+$primary-color--light: lighten($primary-color--base, 10%);
+$primary-color--pastel: pastel($primary-color--base);
+
+$secondary-color--dark: darken($secondary-color--base, 10%);
+$secondary-color--darker: darken($secondary-color--base, 70%); //0.5
+$secondary-color--light: lighten($secondary-color--base, 30%);
+$secondary-color--pastel: pastel($secondary-color--base);
+
+$greenscale-color--dark: darken($greenscale-color--base, 10%);
+$greenscale-color--light: lighten($greenscale-color--base, 10%);
+$greenscale-color--pastel: pastel($greenscale-color--base);
+
+$bluescale-color--dark: darken($bluescale-color--base, 10%);
+$bluescale-color--light: lighten($bluescale-color--base, 10%);
+$bluescale-color--pastel: pastel($bluescale-color--base);
+
+$redscale-color--dark: darken($redscale-color--base, 10%);
+$redscale-color--light: lighten($redscale-color--base, 10%);
+$redscale-color--pastel: pastel($redscale-color--base);
+
+$pinkscale-color--dark: darken($pinkscale-color--base, 20%);
+$pinkscale-color--light: lighten($pinkscale-color--base, 10%);
+$pinkscale-color--pastel: pastel($pinkscale-color--base);

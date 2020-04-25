@@ -15,7 +15,7 @@ function activateBtn (c) {
 
 function filterSelection (c) {
   var x, i
-  x = document.getElementsByClassName('project-title')
+  x = document.getElementsByClassName('projects__title')
 
   activateBtn(c)
 
@@ -45,18 +45,18 @@ function showFiltered (element, name) {
 
 function Projects () {
   return (
-    <div className='projects' >
+    <div className='projects works__projects' >
       <h3>All of my Projects</h3>
       <div className='projects__filter'>
-        <a className='btn btn__filter btn--active' id='all' onClick={() => filterSelection('all')}>All</a>
-        <a className='btn btn__filter' id='css' onClick={() => filterSelection('css')}><FontAwesomeIcon icon={['fab', 'html5']} /> HTML /  <FontAwesomeIcon icon={['fab', 'css3']} /> CSS</a>
-        <a className='btn btn__filter' id='react' onClick={() => filterSelection('react')}><FontAwesomeIcon icon={['fab', 'react']} /> React</a>
-        <a className='btn btn__filter' id='d3' onClick={() => filterSelection('d3')}><Icon icon={d3Icon} /> D3</a>
+        <a className='btn btn--active' id='all' onClick={() => filterSelection('all')}>All</a>
+        <a className='btn' id='css' onClick={() => filterSelection('css')}><FontAwesomeIcon icon={['fab', 'html5']} /> HTML /  <FontAwesomeIcon icon={['fab', 'css3']} /> CSS</a>
+        <a className='btn' id='react' onClick={() => filterSelection('react')}><FontAwesomeIcon icon={['fab', 'react']} /> React</a>
+        <a className='btn' id='d3' onClick={() => filterSelection('d3')}><Icon icon={d3Icon} /> D3</a>
       </div>
 
       <div className='projects__gallery'>
 
-        <div className='project-title text-center react'>
+        <div className='projects__title react'>
           <p>User Dashboard</p>
           <img id="img-p9" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png" />
 
@@ -70,7 +70,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center css'>
+        <div className='projects__title css'>
           <p>Tribute Page</p>
           <img id="img-p1" className="img img--project" alt='project' src="https://www.spettacolo.eu/wp-content/uploads/2019/09/Mika-cover-nuovo-album.jpg" />
 
@@ -84,7 +84,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center css'>
+        <div className='projects__title css'>
           <p>Survey Form</p>
           <img id="img-p2" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FForm.png" />
 
@@ -98,7 +98,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center css'>
+        <div className='projects__title css'>
           <p>Product Landing Page</p>
           <img id="img-p3" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FProduct.png" />
 
@@ -112,7 +112,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center css'>
+        <div className='projects__title css'>
           <p>Technical Documentation Page</p>
           <img id="img-p4" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FDocumentation.png" />
 
@@ -126,7 +126,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center react'>
+        <div className='projects__title react'>
           <p>Random Quote Machine</p>
           <img id="img-p5" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png" />
 
@@ -140,7 +140,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center react'>
+        <div className='projects__title react'>
           <p>Markdown Previewer</p>
           <img id="img-p6" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FMarkdown%20Preview.png" />
 
@@ -154,7 +154,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center d3'>
+        <div className='projects__title d3'>
           <p>Bar Chart</p>
           <img id="img-p7" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png" />
 
@@ -168,7 +168,7 @@ function Projects () {
           </div>
         </div>
 
-        <div className='project-title text-center d3'>
+        <div className='projects__title d3'>
           <p>Scatterplot Graph</p>
           <img id="img-p8" className="img img--project" alt='project' src="https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Dot%20Graph.png" />
 

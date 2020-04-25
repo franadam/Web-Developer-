@@ -8,3 +8,18 @@
   transition: 0.6s ease;
   user-select: none;
 }
+
+@function pastel ($clr) {
+  $hue: hue($clr);
+  $sat: 100;
+  $light: 90;
+  $pastel: hsl($hue, $sat, $light);
+
+  @return $pastel;
+}
+
+@function adjust-alpha ($clr, $a) {
+  $alpha: 1 - $a;
+
+  @return adjust-color($clr, $alpha: -$alpha);
+}

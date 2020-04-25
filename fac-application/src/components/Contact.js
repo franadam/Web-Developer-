@@ -5,12 +5,14 @@ function Contact () {
   return (
     <div className='contact' id='contact'>
       <h2 className='contact__header'>Contact</h2>
-      <div id='contact__info' className='contact__info' >
-        <div className='info__header'>
+      <div className='contact__info info' >
+        <div>
           <h3>Have a question or want to work together?</h3>
-          <p>Bla Bla</p>
+          <p className='info__header'>Let's be real, these contact information are not mine. Maybe you recognize the address.
+            Do not worry I will provide the real ones if we meet !
+          </p>
         </div>
-        <div className='info__mail'>
+        <div className='info__icon'>
           <div>
             <FontAwesomeIcon icon={['fas', 'map-marked-alt']} size="2x" />
             <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Address</h3>
@@ -26,10 +28,10 @@ function Contact () {
           </div>
         </div>
       </div>
-      <div id='container-form' className='contact__container-form'>
-        <h3 style={{ color: 'white' }}>Send us a message</h3>
+      <div className='contact__form form'>
+        <h3 className='form__header'>Send us a message</h3>
 
-        <form id='contact-form' className='contact-form'>
+        <form id='contact-form' className='form__container contact-form'>
           <div className='contact-form__name'>
             <input type="text" id="name" name="name" placeholder="Name"/>
             <input type="email" id="mail" name="mail" placeholder="Mail"/>

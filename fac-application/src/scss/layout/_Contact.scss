@@ -1,5 +1,5 @@
 .contact {
-  background-color: $redscale-color--dark;
+  background-color: darken(adjust-color($secondary-color--pastel, $saturation: -50%), 30%);
   //border: 6px solid $redscale-color--ligth;
   display: grid;
   grid-gap: 0;
@@ -16,9 +16,7 @@
   }
 
   &__info {
-    background-color: rgba($color: #000, $alpha: .1);
     border-radius: $border-radius;
-    color: $white;
     display: grid;
     grid-area: contact-info;
     margin: 0;
@@ -26,8 +24,7 @@
     padding: 10px;
   }
 
-  &__container-form {
-    background-color: hsla(350, 100%, 88%, .8);
+  &__form {
     border-radius: $border-radius;
     display: grid;
     grid-area: contact-form;
@@ -37,14 +34,33 @@
   }
 }
 
-.info__mail {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+.info {
+  background-color: adjust-alpha(darken($secondary-color--dark, 10%), .1);
+  color: $white;
+
+  &__header {
+    grid-area: intro-description;
+    padding: 5% 10%;
+    text-align: justify;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 
-.contact-form {
-  display: grid;
+.form {
+  background-color: $pinkscale-color--pastel;
+
+  &__header {
+    color: white;
+  }
+
+  &__container {
+    display: grid;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -55,8 +71,10 @@
     grid-template-rows: 60px 1fr 1fr;
   }
 
-  .info__mail {
-    display: grid;
-    grid-gap: 5px;
+  .info {
+    &__icon {
+      display: grid;
+      grid-gap: 5px;
+    }
   }
 }

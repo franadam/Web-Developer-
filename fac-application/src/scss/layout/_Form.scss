@@ -24,7 +24,9 @@
 }
 
 @media screen and (max-width: 400px) {
-  .contact-form__name {
-    display: block;
+  .contact-form {
+    &__name {
+      display: block;
+    }
   }
 }

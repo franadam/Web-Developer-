@@ -1,8 +1,5 @@
 .projects {
-  //border: 6px solid red;
-  display: grid;
-  grid-gap: 30px;
-  padding: 10px;
+  background-color: adjust-alpha(complement($bluescale-color--pastel), .7);
   text-align: center;
 
   &__filter {
@@ -13,8 +10,6 @@
   }
 
   &__gallery {
-    background-color: adjust-color($primary-color--pastel, $alpha: -.8);
-    border-radius: $border-radius;
     //border: 3px solid #ccc;
     display: grid;
     grid-gap: 2%;
@@ -25,24 +20,25 @@
     margin: 0;
     padding: 10px;
   }
-}
 
-.project-title {
-  align-content: center;
-  background-color: $primary-color--pastel;
-  border-radius: $border-radius;
-  color: white;
-  display: block;
-  justify-content: center;
-  margin: 0;
-  padding: 5px;
-  position: relative;
-  transition: $transition;
-  width: 100%;
+  &__title {
+    align-content: center;
+    background-color: complement($bluescale-color--light);
+    border-radius: $border-radius;
+    color: white;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    transition: $transition;
+    width: 100%;
 
-  &:hover .overlay {
-    display: flex;
-    height: 100%;
+    &:hover .overlay {
+      display: flex;
+      height: 100%;
+    }
   }
 }
 
@@ -51,9 +47,9 @@
     &__gallery {
       grid-template-columns: 1fr;
     }
-  }
 
-  .project-tile {
-    width: 100%;
+    &__title {
+      width: 100%;
+    }
   }
 }

@@ -9,22 +9,22 @@ const imagesRef = [
 function SlideItem (props) {
   return (
 
-    <div className='carousel' id='carousel' tabIndex="0">
+    <div className='slide-item carousel__item' id='slide-item' tabIndex="0">
 
-      <div className='carousel__img-container text-center'>
+      <div className='slide-item__img-container'>
 
-        <div className="carousel__caption-number text-center">{(props.currentSlide + 1)}/{imagesRef.length}</div>
+        <div className="slide-item__caption-number">{(props.currentSlide + 1)}/{imagesRef.length}</div>
 
         <a href={props.slide.href} target="_blank" rel="noopener noreferrer">
           <img id={'img-c' + props.currentSlide} alt={'slide-' + props.currentSlide} className='img img--carousel' src={props.slide.src}/>
         </a>
 
-        <p className="carousel__caption-text text-center">{props.slide.title}</p>
+        <p className="slide-item__caption-text">{props.slide.title}</p>
 
-        <div className='carousel__navigation-container'>
+        <div className='slide-item__navigation-container'>
 
           <a id='backward' className='navbutt navbutt--backward' onClick={props.backward}></a>
-          <a id='play' className='navbutt navbutt--play in-action' onClick={props.rolling}></a>
+          <a id='play' className='navbutt navbutt--play navbutt--in-action' onClick={props.rolling}></a>
           <a id='forward' className='navbutt navbutt--forward' onClick={props.forward}></a>
 
         </div>
@@ -36,7 +36,7 @@ function SlideItem (props) {
           <span
             key={index}
             id ={'bull' + index}
-            className={props.currentSlide === index ? 'dot active' : 'dot'}
+            className={props.currentSlide === index ? 'dot dot--active' : 'dot'}
             onClick={() => props.changeSlide(index)}
           />)}
       </div>
@@ -48,9 +48,9 @@ function SlideItem (props) {
 function SlideDescription (props) {
   return (
 
-    <div className='description' id='description'>
-      <h3 className="description__header">{props.slide.title}</h3>
-      <p className='description__text'>{props.slide.description}</p>
+    <div className='slide-description carousel__description' id='description'>
+      <h3 className="slide-description__header">{props.slide.title}</h3>
+      <p className='slide-description__text'>{props.slide.description}</p>
     </div>
 
   )
@@ -76,7 +76,7 @@ class Carousel extends React.Component {
 
   componentDidMount () {
     var that = this
-    var carousel = document.getElementById('carousel')
+    var carousel = document.getElementById('slide-item')
     carousel.onFocus = that.handleKeys()
     if (this.pause === true) {
       clearInterval(this.timeout)
@@ -105,7 +105,7 @@ class Carousel extends React.Component {
   play () {
     var play = document.getElementById('play')
     const btn = 'navbutt navbutt--play'
-    this.pause === false ? play.className = btn + ' in-action' : play.className = btn + ' on-breack'
+    this.pause === false ? play.className = btn + ' navbutt--in-action' : play.className = btn + ' navbutt--on-breack'
   }
 
   rolling () {
@@ -185,8 +185,8 @@ class Carousel extends React.Component {
 
   render () {
     return (
-      <div className='carousel-container'>
-        <h3 style={{ gridArea: 'carousel-title' }}>These are some of my projects </h3>
+      <div className='carousel works__carousel'>
+        <h3 className='carousel__header'>These are some of my projects </h3>
 
         <SlideDescription
           slide={this.state.slideshow}

@@ -1,5 +1,5 @@
 .about {
-  background-color: $greenscale-color--pastel;
+  background-color: complement($secondary-color--pastel);
   display: grid;
   grid-template-areas: 'about-header about-header' 'about-description about-skills';
   grid-template-columns: 1fr 1fr;
@@ -12,16 +12,26 @@
   &__description {
     grid-area: about-description;
     padding: 5% 10%;
-    text-align: justify;
   }
 
   &__skills {
     display: grid;
-    font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     grid-area: about-skills;
     grid-gap: 10px;
-    justify-items: right;
     margin: 0;
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    grid-template-areas: 'about-header' 'about-description' 'about-skills';
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    padding: 0;
+
+    &__description {
+      padding: 5px;
+    }
   }
 }

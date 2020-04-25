@@ -1,20 +1,32 @@
-.skillbar {
+.skills {
+  font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  justify-items: right;
+
+  &__header {
+    justify-self: center;
+  }
+
+  &__bar {
+    position: relative;
+    top: 0;
+    width: 80%;
+  }
+}
+
+.bar {
   background-color: #ddd;
   border-radius: $border-radius;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
-  position: relative;
-  top: 0;
-  width: 80%;
 
   &__title {
-    background-color: $primary-color--ligth;
+    background-color: $greenscale-color--light;
     border-radius: $border-radius 0  0 $border-radius;
     color: #fff;
     height: 100%;
     left: -105px;
     position: absolute;
     top: 0;
-    width: 110px;
+    width: 110px;//adjust-hue($secondary-color--pastel, 0deg);
 
     & span {
       align-items: center;
@@ -29,7 +41,7 @@
 
   &__percent {
     align-items: center;
-    background-color: $primary-color--dark;
+    background-color: $bluescale-color--base;
     border-radius: $border-radius;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     color: white;
@@ -37,42 +49,42 @@
     padding: 10px 0;
     text-align: right;
 
-    &.html {
+    &--html {
       animation-duration: 3s;
       //background-color: #4caf50;
       animation-name: progress-html;
       width: 90%;
     }
 
-    &.css {
+    &--css {
       animation-duration: 3s;
       //background-color: #2196f3;
       animation-name: progress-css;
       width: 80%;
     }
 
-    &.js {
+    &--js {
       animation-duration: 3s;
       //background-color: #f44336;
       animation-name: progress-js;
       width: 75%;
     }
 
-    &.php {
+    &--php {
       animation-duration: 3s;
       //background-color: #808080;
       animation-name: progress-php;
       width: 50%;
     }
 
-    &.react {
+    &--react {
       animation-duration: 3s;
       //background-color: #f44336;
       animation-name: progress-react;
       width: 70%;
     }
 
-    &.d3 {
+    &--d3 {
       animation-duration: 3s;
       //background-color: #808080;
       animation-name: progress-d3;
@@ -142,7 +154,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .skillbar {
+  .bar {
     &__title {
       left: -45px;
       width: 50px;

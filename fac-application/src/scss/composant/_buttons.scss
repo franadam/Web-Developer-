@@ -13,13 +13,82 @@
   }
 
   &--form {
-    background-color: $redscale-color--dark;
+    background-color: $pinkscale-color--dark;
     border: none;
     color: $white;
     justify-self: right;
 
     &:hover {
-      background-color: $redscale-color--ligth;
+      background-color: darken($pinkscale-color--dark, 30%);
     }
+  }
+}
+
+.navbutt {
+  @extend %fa-icon;
+  @extend .fas;
+  @extend %carousel__btn;
+
+  border-radius: $border-radius 0 0 $border-radius;
+  cursor: pointer;
+
+  &--backward {
+    left: 31px;
+
+    &::before {
+      content: fa-content($fa-var-chevron-left);
+    }
+  }
+
+  &--play {
+    border-radius: $border-radius;
+  }
+
+  &--forward {
+    border-radius: 0 $border-radius $border-radius 0;
+    right: 0;
+
+    &::before {
+      content: fa-content($fa-var-chevron-right);
+    }
+  }
+
+  &--in-action {
+    @extend %fa-icon;
+    @extend .fas;
+
+    &::before {
+      content: fa-content($fa-var-pause);
+    }
+  }
+
+  &--on-breack {
+    @extend %fa-icon;
+    @extend .fas;
+
+    &::after {
+      content: fa-content($fa-var-play);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  justify-items: center;
+  margin: 0 5px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+
+  &--active,
+  &:hover {
+    background-color: #717171;
   }
 }

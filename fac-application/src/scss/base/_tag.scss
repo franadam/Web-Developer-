@@ -4,7 +4,7 @@
 
 html,
 body {
-  background: $page-bg-color;
+  background: $primary-color--pastel;
   height: 100%;
   margin: 0;
   position: relative;
@@ -35,7 +35,7 @@ h3 {
   font-family: "Comfortaa", cursive;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 20px;
+  margin: 10px 20px;
   margin-bottom: 0;
   text-align: center;
   text-shadow: 0 1px 1px #fff;

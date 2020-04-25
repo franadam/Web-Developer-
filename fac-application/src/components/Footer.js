@@ -6,7 +6,7 @@ import codewarsIcon from '@iconify/icons-simple-icons/codewars'
 function Footer () {
   return (
     <div id='footer' className='footer'>
-      <div className='footer__logo'>
+      <div className='footer__header'>
         Au revoir !
       </div>
       <ul className='footer__profile'>
