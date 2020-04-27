@@ -17,6 +17,6 @@
           "declarations"
       ],
       "order/properties-alphabetical-order": true,
-    "at-rule-no-unknown": [true,{"ignoreAtRules": ["function", "if", "return", "extend"]}]
+    "at-rule-no-unknown": [true,{"ignoreAtRules": ["function", "if", "return", "extend", "include", "mixin", "each", "if", "for"]}]
     }
 }

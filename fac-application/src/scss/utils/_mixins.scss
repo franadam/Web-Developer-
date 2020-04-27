@@ -1,0 +1,54 @@
+@function pastel ($clr) {
+  $hue: hue($clr);
+  $sat: 100;
+  $light: 90;
+  $pastel: hsl($hue, $sat, $light);
+
+  @return $pastel;
+}
+
+@function adjust-alpha ($clr, $a) {
+  $alpha: 1 - $a;
+
+  @return adjust-color($clr, $alpha: -$alpha);
+}
+
+@mixin frame-mixin ($skills) {
+  @for $i from 1 through length($skills) {
+    $data: nth($skills, $i);
+    $name: map-get($data, name);
+
+    @keyframes progress-#{$name} {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: map-get($data, width);
+      }
+    }
+  }
+}
+
+@mixin skill-color-mixin ($skills) {
+  @for $i from 1 through length($skills) {
+    $data: nth($skills, $i);
+    $name: map-get($data, name);
+    &--#{$name} {
+      background-color: lighten(adjust-color(map-get($data, color), $saturation: 20%, $lightness: 10%), 10%);
+    }
+  }
+}
+
+@mixin animation-mixin ($skills, $time) {
+  @for $i from 1 through length($skills) {
+    $data: nth($skills, $i);
+    $name: map-get($data, name);
+    &--#{$name} {
+      animation-duration: $time;
+      animation-name: progress-#{$name};
+      background-color: map-get($data, color);
+      width: map-get($data, width);
+    }
+  }
+}

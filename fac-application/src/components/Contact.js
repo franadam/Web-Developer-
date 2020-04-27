@@ -14,16 +14,16 @@ function Contact () {
         </div>
         <div className='info__icon'>
           <div>
-            <FontAwesomeIcon icon={['fas', 'map-marked-alt']} size="2x" />
-            <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Address</h3>
-            <p className='text-start'>Charlemagne building <br/>
+            <FontAwesomeIcon className='icon__img' icon={['fas', 'map-marked-alt']} />
+            <h3 className='icon__header'>Address</h3>
+            <p >Charlemagne building <br/>
               Rue de la Loi 170 <br/>
               1040 Brussels <br/>
               Belgium</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={['fas', 'phone']} size="2x" />
-            <h3 style={{ textShadow: 'none', fontWeight: 'bold' }}>Phone</h3>
+            <FontAwesomeIcon className='icon__img' icon={['fas', 'phone']} />
+            <h3 className='icon__header'>Phone</h3>
             <p>00 800 67 89 10 11</p>
           </div>
         </div>
@@ -37,7 +37,7 @@ function Contact () {
             <input type="email" id="mail" name="mail" placeholder="Mail"/>
           </div>
           <input type="text" id="subject" name="subject" placeholder="Subject"/>
-          <textarea id="message" name="massage" placeholder="Message" style={{ height: '170px' }}></textarea>
+          <textarea id="message" name="massage" placeholder="Message"></textarea>
           <button className='btn btn--form' type="submit">Submit</button>
         </form>
 

@@ -14,19 +14,21 @@
 }
 
 .bar {
-  background-color: #ddd;
+  background-color: $primary-color--pastel;
   border-radius: $border-radius;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
 
   &__title {
-    background-color: $greenscale-color--light;
     border-radius: $border-radius 0  0 $border-radius;
-    color: #fff;
+    color: $secondary-color--base;
+    font-weight: bold;
     height: 100%;
     left: -105px;
     position: absolute;
     top: 0;
-    width: 110px;//adjust-hue($secondary-color--pastel, 0deg);
+    width: 110px;
+
+    @include skill-color-mixin ($skills-map1);
 
     & span {
       align-items: center;
@@ -44,114 +46,16 @@
     background-color: $bluescale-color--base;
     border-radius: $border-radius;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-    color: white;
+    color: $secondary-color--base;
     height: 100%;
     padding: 10px 0;
     text-align: right;
 
-    &--html {
-      animation-duration: 3s;
-      //background-color: #4caf50;
-      animation-name: progress-html;
-      width: 90%;
-    }
-
-    &--css {
-      animation-duration: 3s;
-      //background-color: #2196f3;
-      animation-name: progress-css;
-      width: 80%;
-    }
-
-    &--js {
-      animation-duration: 3s;
-      //background-color: #f44336;
-      animation-name: progress-js;
-      width: 75%;
-    }
-
-    &--php {
-      animation-duration: 3s;
-      //background-color: #808080;
-      animation-name: progress-php;
-      width: 50%;
-    }
-
-    &--react {
-      animation-duration: 3s;
-      //background-color: #f44336;
-      animation-name: progress-react;
-      width: 70%;
-    }
-
-    &--d3 {
-      animation-duration: 3s;
-      //background-color: #808080;
-      animation-name: progress-d3;
-      width: 60%;
-    }
+    @include animation-mixin($skills-map1, 3s);
   }
 }
 
-@keyframes progress-html {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes progress-css {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 80%;
-  }
-}
-
-@keyframes progress-php {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 50%;
-  }
-}
-
-@keyframes progress-react {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-
-@keyframes progress-d3 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-
-@keyframes progress-js {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 75%;
-  }
-}
+@include frame-mixin ($skills-map1);
 
 @media screen and (max-width: 400px) {
   .bar {

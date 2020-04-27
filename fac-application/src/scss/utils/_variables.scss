@@ -1,13 +1,3 @@
-$white: #fff;
-$black: #000;
-
-$primary-color--base: hsl(47, 80%, 60%);
-$secondary-color--base: hsl(0, 80%, 20%);
-
-$greenscale-color--base: hsl(122, 60%, 49);
-$bluescale-color--base: hsl(195, 80%, 50%);
-$redscale-color--base: hsl(0, 100%, 50%);
-$pinkscale-color--base: hsl(350, 80%, 88%);
 
 $header-height: 100vh;
 $navbar-height: 10px;
@@ -16,3 +6,12 @@ $navbar-height: 60px;
 $border-radius: 5px;
 
 $transition: .3s;
+
+$skills-map1: (
+  (name:html,color:  adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 0deg), width: 90%),
+  (name:css,color:   adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 10deg), width: 80%),
+  (name:js, color:   adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 20deg), width: 75%),
+  (name:react,color: adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 30deg), width: 70%),
+  (name:d3,color:    adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 40deg), width: 60%),
+  (name:php,color:   adjust-color($bluescale-color--base, $hue: hue($bluescale-color--base) + 50deg), width: 50%)
+);

@@ -1,3 +1,15 @@
+$white: #fff;
+$black: #000;
+
+$primary-color--base: hsl(47, 80%, 60%);
+$secondary-color--base: hsl(0, 80%, 20%);
+
+$greenscale-color--base: hsl(122, 60%, 49);
+$bluescale-color--base: hsl(195, 80%, 50%);
+$redscale-color--base: hsl(0, 100%, 50%);
+$orangescale-color--base: hsl(34, 100%, 50%);
+$pinkscale-color--base: hsl(350, 80%, 88%);
+
 $primary-color--dark: darken($primary-color--base, 10%);
 $primary-color--darker: darken($primary-color--base, 30%);
 $primary-color--light: lighten($primary-color--base, 10%);

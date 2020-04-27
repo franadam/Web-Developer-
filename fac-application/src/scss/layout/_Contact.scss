@@ -51,11 +51,25 @@
   }
 }
 
+.icon {
+  &__header {
+    color: $primary-color--base;
+    font-weight: bold;
+    text-shadow: none;
+  }
+
+  &__img {
+    color: $primary-color--pastel;
+    font-size: 2em;
+  }
+}
+
 .form {
-  background-color: $pinkscale-color--pastel;
+  //background-color: adjust-alpha($pinkscale-color--pastel, .3);
 
   &__header {
-    color: white;
+    color: $primary-color--pastel;
+    text-shadow: 0 1px 1px $primary-color--base;
   }
 
   &__container {

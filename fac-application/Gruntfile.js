@@ -41,11 +41,11 @@ module.exports = function (grunt) {
           },
         watch: {
             files: ['Gruntfile.js','src/components/*.js','src/scss/**/*.scss'],
-            tasks: ['eslint', 'stylelint']//,'sasslint','postcss']
+            tasks: [ 'stylelint', 'eslint']//,'sasslint','postcss']
         }
     });
 
     grunt.registerTask('default', ['eslint','stylelint','sasslint']);
-    grunt.registerTask('postprocess', ['postcss']); //npx stylelint src/scss/**/*.scss --fix 
+    grunt.registerTask('postprocess', ['postcss']); //npx stylelint src/scss/**/*.scss --fix
 };
 

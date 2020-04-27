@@ -3,14 +3,21 @@
 
   & input,
   & textarea {
+    background-color: $primary-color--pastel;
     border: 1px solid $redscale-color--dark;
     border-radius: $border-radius;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2) inset;
     box-sizing: border-box;
     color: $redscale-color--dark;
     display: table-cell;
     margin: 6px 0 16px 0;
     padding: 12px;
     width: 100%;
+  }
+
+  & textarea {
+    height: 170px;
+    resize: none;
   }
 
   &__name {
