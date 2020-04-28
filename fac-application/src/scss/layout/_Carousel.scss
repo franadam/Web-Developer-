@@ -58,9 +58,7 @@
   &__caption-number {
     @extend %carousel__btn;
 
-    background-color: rgba(0, 0, 0, .4);
-    border-radius: $border-radius;
-    padding: 5px;
+    background-color: adjust-alpha($secondary-color--dark, .4);
     position: relative;
     top: 50px;
   }

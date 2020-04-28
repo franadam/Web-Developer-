@@ -35,3 +35,9 @@ $redscale-color--pastel: pastel($redscale-color--base);
 $pinkscale-color--dark: darken($pinkscale-color--base, 20%);
 $pinkscale-color--light: lighten($pinkscale-color--base, 10%);
 $pinkscale-color--pastel: pastel($pinkscale-color--base);
+
+:export {
+  primary_color: $primary-color--base;
+  secondary_color_base: $secondary-color--base;
+  secondary_color_dark: $secondary-color--dark;
+}

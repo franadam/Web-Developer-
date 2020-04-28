@@ -13,11 +13,12 @@
 
   &__link {
     & a {
-      padding: 15px;
+      padding: 10px;
 
       &:hover {
-        background-color: $redscale-color--base;
+        background-color: adjust-alpha($primary-color--base, .2);
         border-radius: 50%;
+        box-shadow: 1px 1px 10px 0 adjust-alpha($secondary-color--dark, .9);
       }
     }
   }

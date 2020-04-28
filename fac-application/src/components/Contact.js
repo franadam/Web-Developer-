@@ -29,7 +29,7 @@ function Contact () {
         </div>
       </div>
       <div className='contact__form form'>
-        <h3 className='form__header'>Send us a message</h3>
+        <h3 className='form__header'>Send me a message</h3>
 
         <form id='contact-form' className='form__container contact-form'>
           <div className='contact-form__name'>

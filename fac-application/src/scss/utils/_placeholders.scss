@@ -1,5 +1,5 @@
 %carousel__btn {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: adjust-alpha($secondary-color--dark, .2);
   border-radius: $border-radius;
   color: white;
   display: flex;

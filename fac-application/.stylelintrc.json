@@ -17,6 +17,8 @@
           "declarations"
       ],
       "order/properties-alphabetical-order": true,
-    "at-rule-no-unknown": [true,{"ignoreAtRules": ["function", "if", "return", "extend", "include", "mixin", "each", "if", "for"]}]
+      "at-rule-no-unknown": [true,{"ignoreAtRules": ["function", "if", "return", "extend", "include", "mixin", "each", "if", "for"]}],
+      "selector-pseudo-class-no-unknown": [true,{"ignorePseudoClasses": ["export"]}],
+      "property-no-unknown": [true,{"ignoreProperties": ["primary_color", "secondary_color_base", "secondary_color_dark"]}]
     }
 }

@@ -17,6 +17,7 @@
   background-color: $primary-color--pastel;
   border-radius: $border-radius;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
+  max-height: 2em;
 
   &__title {
     border-radius: $border-radius 0  0 $border-radius;
@@ -60,8 +61,8 @@
 @media screen and (max-width: 400px) {
   .bar {
     &__title {
-      left: -45px;
-      width: 50px;
+      left: -55px;
+      width: 60px;
 
       & span {
         font-size: 10px;

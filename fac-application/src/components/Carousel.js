@@ -3,8 +3,8 @@ var INTER = 4000
 
 const imagesRef = [
   { title: 'Chart', description: 'This bar chart uses D3 to plot US GDP through the years.', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
-  { title: 'Random Quote Machine', description: 'The goals of this project is to be able to fetch random quote from a public api and display them on our page.', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
-  { title: 'Dashboard', description: 'The goal of this project is to create a dashboard with which the user can manage his account. In this scenario, the form used to modify the user profile information has to be created. The form contains two tabs, as specified below and shown in the picture.', href: 'https://eloquent-aryabhata-f6b832.netlify.app', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png' }]
+  { title: 'Random Quote Machine', description: 'The goals of this project is to be able to generate random quotes from a local data and display them on our page. The project uses react to render the page.', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
+  { title: 'Dashboard', description: 'The goal of this project is to create a dashboard with which the user can manage his account. In this scenario, the form used to modify the user profile information has to be created. The app is made with React, the source code can be found in my GitLab profile.', href: 'https://eloquent-aryabhata-f6b832.netlify.app', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png' }]
 
 function SlideItem (props) {
   return (

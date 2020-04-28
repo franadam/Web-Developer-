@@ -1,6 +1,5 @@
 .navbar {
-  background-color: $secondary-color--base;
-
+  //
   //grid-gap: 10px;
   //grid-template-areas: 'navbarLogo navbarNav';
   //grid-template-columns: 1fr 2fr;
@@ -12,10 +11,6 @@
   width: 100%;
   z-index: 1;
 
-  &:hover {
-    box-shadow: 0 5px 5px rgb(68, 68, 68);
-  }
-
   &__link {
     color: $white;
     float: right;
@@ -24,14 +19,17 @@
     text-decoration: none;
 
     &:hover {
-      background-color: adjust-alpha($primary-color--base, .5);
+      background-color: adjust-alpha($primary-color--base, .1);
       border-radius: $border-radius;
+      box-shadow: 1px 1px 10px 0 adjust-alpha($secondary-color--dark, .9);
     }
   }
 }
 
 @media screen and (max-width: 500px) {
   .navbar {
+    background-color: $secondary-color--base;
+
     &__link {
       display: block;
       justify-content: center;

@@ -1,6 +1,7 @@
 .btn {
   background-color: $greenscale-color--base;
   border-radius: $border-radius;
+  box-shadow: 1px 1px 2px 0 adjust-alpha($secondary-color--dark, .4);
   cursor: pointer;
   padding: 10px;
 
@@ -77,8 +78,9 @@
 }
 
 .dot {
-  background-color: #bbb;
+  background-color: $primary-color--light;
   border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 adjust-alpha($secondary-color--dark, .4);
   cursor: pointer;
   display: inline-block;
   height: 15px;
@@ -89,6 +91,6 @@
 
   &--active,
   &:hover {
-    background-color: #717171;
+    background-color: darken($secondary-color--pastel, 10%);
   }
 }
