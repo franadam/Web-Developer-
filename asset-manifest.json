@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Web-Developer/fac-application/static/css/main.f675cce0.chunk.css",
-    "main.js": "/Web-Developer/fac-application/static/js/main.a3b3742c.chunk.js",
-    "main.js.map": "/Web-Developer/fac-application/static/js/main.a3b3742c.chunk.js.map",
-    "runtime-main.js": "/Web-Developer/fac-application/static/js/runtime-main.b1a9c470.js",
-    "runtime-main.js.map": "/Web-Developer/fac-application/static/js/runtime-main.b1a9c470.js.map",
-    "static/js/2.a7b214b0.chunk.js": "/Web-Developer/fac-application/static/js/2.a7b214b0.chunk.js",
-    "static/js/2.a7b214b0.chunk.js.map": "/Web-Developer/fac-application/static/js/2.a7b214b0.chunk.js.map",
-    "index.html": "/Web-Developer/fac-application/index.html",
-    "precache-manifest.2c5db94aacbfdc3a637e824146a17bc3.js": "/Web-Developer/fac-application/precache-manifest.2c5db94aacbfdc3a637e824146a17bc3.js",
-    "service-worker.js": "/Web-Developer/fac-application/service-worker.js",
-    "static/css/main.f675cce0.chunk.css.map": "/Web-Developer/fac-application/static/css/main.f675cce0.chunk.css.map",
-    "static/js/2.a7b214b0.chunk.js.LICENSE.txt": "/Web-Developer/fac-application/static/js/2.a7b214b0.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/Web-Developer/fac-application/static/media/fa-solid-900.ec763292.svg"
+    "main.css": "/Web-Developer/static/css/main.084ac85d.chunk.css",
+    "main.js": "/Web-Developer/static/js/main.8039813f.chunk.js",
+    "main.js.map": "/Web-Developer/static/js/main.8039813f.chunk.js.map",
+    "runtime-main.js": "/Web-Developer/static/js/runtime-main.daec156c.js",
+    "runtime-main.js.map": "/Web-Developer/static/js/runtime-main.daec156c.js.map",
+    "static/js/2.a7b214b0.chunk.js": "/Web-Developer/static/js/2.a7b214b0.chunk.js",
+    "static/js/2.a7b214b0.chunk.js.map": "/Web-Developer/static/js/2.a7b214b0.chunk.js.map",
+    "index.html": "/Web-Developer/index.html",
+    "precache-manifest.addf6ffd21c2f344e2837e07bc6c5ed8.js": "/Web-Developer/precache-manifest.addf6ffd21c2f344e2837e07bc6c5ed8.js",
+    "service-worker.js": "/Web-Developer/service-worker.js",
+    "static/css/main.084ac85d.chunk.css.map": "/Web-Developer/static/css/main.084ac85d.chunk.css.map",
+    "static/js/2.a7b214b0.chunk.js.LICENSE.txt": "/Web-Developer/static/js/2.a7b214b0.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Web-Developer/static/media/fa-solid-900.ec763292.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1a9c470.js",
+    "static/js/runtime-main.daec156c.js",
     "static/js/2.a7b214b0.chunk.js",
-    "static/css/main.f675cce0.chunk.css",
-    "static/js/main.a3b3742c.chunk.js"
+    "static/css/main.084ac85d.chunk.css",
+    "static/js/main.8039813f.chunk.js"
   ]
 }
