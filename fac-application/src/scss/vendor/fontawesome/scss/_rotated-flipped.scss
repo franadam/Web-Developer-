@@ -19,6 +19,7 @@
   .#{$fa-css-prefix}-flip-horizontal,
   .#{$fa-css-prefix}-flip-vertical,
   .#{$fa-css-prefix}-flip-both {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }

@@ -11,12 +11,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr 1fr;
   height: $footer-height;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 0;
   padding: 10px;
   position: absolute;
-  right: 0;//$footer-bg-color;
-  //width: 100%;
+  right: 0;
 
   &__header {
     font-family: 'Dancing Script', 'Comic Sans', sans-serif;
@@ -40,9 +41,13 @@
   }
 
   &__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-area: footer-contact;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
   }
 

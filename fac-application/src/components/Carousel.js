@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 var INTER = 4000
 
 const imagesRef = [
@@ -125,7 +126,7 @@ class Carousel extends React.Component {
     })
   }
 
-  changeSlide (index, event) {
+  changeSlide (index) {
     this.currentIndex = index
     console.log('pause:', this.pause)
     this.setState({
@@ -208,6 +209,24 @@ class Carousel extends React.Component {
       </div>
     )
   }
+}
+
+SlideItem.propTypes = {
+  slide: PropTypes.object,
+  currentSlide: PropTypes.number,
+  auto: PropTypes.func,
+  rolling: PropTypes.func,
+  backward: PropTypes.func,
+  forward: PropTypes.func,
+  changeSlide: PropTypes.func,
+  handleKeys: PropTypes.func
+}
+
+SlideDescription.propTypes = {
+  slide: PropTypes.object,
+  currentSlide: PropTypes.number,
+  changeSlide: PropTypes.func,
+  handleKeys: PropTypes.func
 }
 
 export default Carousel

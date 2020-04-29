@@ -8,7 +8,7 @@ function Contact () {
       <div className='contact__info info' >
         <div>
           <h3>Have a question or want to work together?</h3>
-          <p className='info__header'>Let's be real, these contact information are not mine. Maybe you recognize the address.
+          <p className='info__header'>Let&apos;s be real, these contact information are not mine. Maybe you recognize the address.
             Do not worry I will provide the real ones if we meet !
           </p>
         </div>

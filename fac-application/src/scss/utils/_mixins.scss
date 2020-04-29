@@ -18,6 +18,16 @@
     $data: nth($skills, $i);
     $name: map-get($data, name);
 
+    @-webkit-keyframes progress-#{$name} {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: map-get($data, width);
+      }
+    }
+
     @keyframes progress-#{$name} {
       0% {
         width: 0;
@@ -45,7 +55,9 @@
     $data: nth($skills, $i);
     $name: map-get($data, name);
     &--#{$name} {
+      -webkit-animation-duration: $time;
       animation-duration: $time;
+      -webkit-animation-name: progress-#{$name};
       animation-name: progress-#{$name};
       background-color: map-get($data, color);
       width: map-get($data, width);

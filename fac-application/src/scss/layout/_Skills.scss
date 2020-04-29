@@ -16,7 +16,8 @@
 .bar {
   background-color: $primary-color--pastel;
   border-radius: $border-radius;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, .2) inset;
   max-height: 2em;
 
   &__title {
@@ -32,21 +33,31 @@
     @include skill-color-mixin ($skills-map1);
 
     & span {
-      align-items: center;
-      align-self: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 100%;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       //background:rgba(0, 0, 0, 0.1);
       padding: 0 20px;
     }
   }
 
   &__percent {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: $bluescale-color--base;
     border-radius: $border-radius;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     color: $secondary-color--base;
     height: 100%;
     padding: 10px 0;

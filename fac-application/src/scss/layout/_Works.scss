@@ -11,7 +11,9 @@
     grid-template-areas: 'carousel-title carousel-title' 'carousel-text carousel-images';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 1fr;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px;
     width: 100%;
   }

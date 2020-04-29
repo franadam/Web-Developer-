@@ -3,9 +3,13 @@
   text-align: center;
 
   &__filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-gap: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
 
@@ -15,27 +19,36 @@
     grid-gap: 2%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
     grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     justify-items: center;
     margin: 0;
     padding: 10px;
   }
 
   &__title {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     background-color: complement($bluescale-color--light);
     border-radius: $border-radius;
     color: white;
     display: block;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 5px;
     position: relative;
     text-align: center;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
     transition: $transition;
     width: 100%;
 
     &:hover .overlay {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 100%;
     }

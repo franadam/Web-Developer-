@@ -4,7 +4,9 @@
   }
 
   &__item {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     //border: 6px solid red;
     display: grid;
     grid-area: carousel-images;
@@ -20,7 +22,8 @@
 
 .slide-description {
   background-color: adjust-alpha(adjust-hue($primary-color--pastel, 90deg), .6);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4);
 
   &__header {
     font-size: 15px;
@@ -38,7 +41,8 @@
   text-align: center;
 
   &__img-container {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     border-radius: $border-radius;
     display: grid;
     justify-items: center;
@@ -46,10 +50,14 @@
   }
 
   &__navigation-container {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0;
     padding: 0;
     width: 100%;

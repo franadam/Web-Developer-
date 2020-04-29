@@ -14,14 +14,17 @@
   &__link {
     color: $white;
     float: right;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     padding: 15px;
     text-decoration: none;
 
     &:hover {
       background-color: adjust-alpha($primary-color--base, .1);
       border-radius: $border-radius;
-      box-shadow: 1px 1px 10px 0 adjust-alpha($secondary-color--dark, .9);
+      -webkit-box-shadow: 1px 1px 10px 0 adjust-alpha($secondary-color--dark, .9);
+              box-shadow: 1px 1px 10px 0 adjust-alpha($secondary-color--dark, .9);
     }
   }
 }
@@ -32,7 +35,9 @@
 
     &__link {
       display: block;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 5px;
       text-align: center;
       width: 100%;
