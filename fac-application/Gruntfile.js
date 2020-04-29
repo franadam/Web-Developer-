@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         },
         postcss: {
             options: {
-              //map: true,
+              map: true,
               syntax: require('postcss-scss'),
               processors: [
                 require('postcss-sorting'),
