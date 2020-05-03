@@ -3,9 +3,15 @@ import PropTypes from 'prop-types'
 var INTER = 4000
 
 const imagesRef = [
-  { title: 'Chart', description: 'This bar chart uses D3 to plot US GDP through the years.', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
+  { title: 'Chart', description: 'This bar chart uses is entirelly D3 to plot US GDP through the years.', href: 'https://codepen.io/franadam/full/GRJqLEz', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FD3%20Bar%20Chart.png' },
   { title: 'Random Quote Machine', description: 'The goals of this project is to be able to generate random quotes from a local data and display them on our page. The project uses react to render the page.', href: 'https://codepen.io/franadam/full/eYmMeJd', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FRandom%20Quote%20Machine.png' },
-  { title: 'Dashboard', description: 'The goal of this project is to create a dashboard with which the user can manage his account. In this scenario, the form used to modify the user profile information has to be created. The app is made with React, the source code can be found in my GitLab profile.', href: 'https://eloquent-aryabhata-f6b832.netlify.app', src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png' }]
+  {
+    title: 'Dashboard',
+    description: ['The goal of this project is to create a dashboard with which the user can manage his account. In this scenario, the form used to modify the user profile information has to be created. The app is made with React, ',
+      'you can find the GitLab repo that contains the code, ', <a href="https://gitlab.com/franadam/innoloft_frontend_application" target="_blank" rel="noopener noreferrer">Here</a>],
+    href: 'https://eloquent-aryabhata-f6b832.netlify.app',
+    src: 'https://cdn.glitch.com/6daee3c9-0db4-4cde-afd8-d99d15aef073%2FUser%20Dashboard.png'
+  }]
 
 function SlideItem (props) {
   return (
@@ -24,9 +30,9 @@ function SlideItem (props) {
 
         <div className='slide-item__navigation-container'>
 
-          <a id='backward' className='navbutt navbutt--backward' onClick={props.backward}></a>
-          <a id='play' className='navbutt navbutt--play navbutt--in-action' onClick={props.rolling}></a>
-          <a id='forward' className='navbutt navbutt--forward' onClick={props.forward}></a>
+          <button type='button' id='backward' className='navbutt navbutt--backward' onClick={props.backward}></button>
+          <button type='button' id='play' className='navbutt navbutt--play navbutt--in-action' onClick={props.rolling}></button>
+          <button type='button' id='forward' className='navbutt navbutt--forward' onClick={props.forward}></button>
 
         </div>
 

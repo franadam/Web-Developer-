@@ -11,15 +11,23 @@
 
   &__description {
     grid-area: about-description;
-    padding: 5% 10%;
+    padding: 5%;
   }
 
   &__skills {
     display: grid;
     grid-area: about-skills;
-    grid-gap: 10px;
+    grid-gap: 5vh;
     margin: 0;
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {    
+  &__skills {
+    grid-gap: 2vh;
+  }
   }
 }
 

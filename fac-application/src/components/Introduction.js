@@ -15,13 +15,24 @@ function Introduction () {
         </p>
 
         <p>
-        I possess a robust training in mathematics and programming.
-        I have been learning frontend development for a few months on <a href='https://www.freecodecamp.org/fcc8ab3e79f-4203-4b47-9439-59b4396f3dae'> FreeCodeCamp</a> and I have a keen interest in technical area to be able to create new technology.
-        In addition to healthcare, ecology and energy have been a preoccupation of mine for a sometime now and that is the reason why as a student I worked in wastewater treatment plants and waste sorting plants for several years.
+          I have been learning web development for a few months on <a href='https://www.freecodecamp.org/fcc8ab3e79f-4203-4b47-9439-59b4396f3dae'> FreeCodeCamp</a>.
+          I possess a robust training in mathematics and programming (in other languages, like Python and Java).
+          In addition to healthcare, ecology and renewable energy have been a preoccupation of mine for a sometime now and that is the reason why as a student I worked in wastewater treatment plants and waste sorting plants for several years.
         </p>
 
         <p>
-          You can find my work on my profiles :
+          I see myself in a position as a front-end developer or full-stack developer before the end of the year. Ideally, I would like to move to a big European city like London – I know technically it is not the case anymore. Anyway, eing accepted to Founders And Coders would help me to advance this goal.
+        </p>
+
+        <p>
+        I like the concept of being given an opportunity like yours, by a community, and be able to make a positive impact in that same community by mentoring the next cohort.
+          I have been giving individual Sciences and Maths class to high school students for months and throughout my studies,
+          I was part of an international student association, the main activity was to organize national engineering competition and European course,
+          so I am used to team working and I developed a good team work ethics with people from different backgrounds.
+        </p>
+
+        <p>
+        All this scientific and technical luggages make that I could suit in your program. You can find my work on my profiles :
         </p>
         <div className='intro__profile'>
           <a href='https://www.freecodecamp.org/fcc8ab3e79f-4203-4b47-9439-59b4396f3dae' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'free-code-camp']} /></a>

@@ -15,16 +15,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          text-align: center;
 
   &__title {
-    -webkit-transform: translate(-20vw, 8vh) rotate(-45deg);
-        -ms-transform: translate(-20vw, 8vh) rotate(-45deg);
-            transform: translate(-20vw, 8vh) rotate(-45deg);
+    -webkit-transform: translate(-18vw, 6vh) rotate(-45deg);
+        -ms-transform: translate(-18vw, 6vh) rotate(-45deg);
+            transform: translate(-18vw, 6vh) rotate(-45deg);
   }
 
   &__subtitle {
     font-family: 'Dancing Script', 'Comic Sans', sans-serif;
-    text-transform: none;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px $primary-color--pastel;
     //font-size: 130px;
     -webkit-transform: translate(-10vw, -10vh) rotate(-45deg);
         -ms-transform: translate(-10vw, -10vh) rotate(-45deg);

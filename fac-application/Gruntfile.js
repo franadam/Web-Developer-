@@ -50,7 +50,7 @@ module.exports = function (grunt) {
           //},
         watch: {
             files: ['Gruntfile.js','src/components/*.js','src/scss/**/*.scss'],
-            tasks: [ 'stylelint', 'eslint', 'postcss']
+            tasks: ['eslint', 'postcss'] //'stylelint', 
         }
     });
 

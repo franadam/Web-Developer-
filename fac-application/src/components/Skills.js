@@ -42,10 +42,10 @@ function Skills () {
       </div>
 
       <div className="skills__bar bar">
-        <div className="bar__title bar__title--php">
-          <span>PHP</span>
+        <div className="bar__title bar__title--python">
+          <span>Python</span>
         </div>
-        <div className="bar__percent bar__percent--php">50%</div>
+        <div className="bar__percent bar__percent--python">85%</div>
       </div>
 
     </div>

@@ -7,22 +7,15 @@
 
   &__description {
     grid-area: intro-description;
-    padding: 5% 10%;
+    padding: 2%;
     text-align: justify;
-
-    a {
-      color: black;
-
-      &:hover {
-        font-weight: bold;
-        text-decoration: underline;
-      }
-    }
+    
+    @include link(black);
   }
 
   &__tagline {
     font-size: 1.2em;
-    padding: 0;
+    padding: 7%;
     text-align: center;
   }
 

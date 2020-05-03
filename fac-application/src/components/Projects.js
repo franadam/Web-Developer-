@@ -48,10 +48,10 @@ function Projects () {
     <div className='projects works__projects' >
       <h3>All of my Projects</h3>
       <div className='projects__filter'>
-        <a className='btn btn--active' id='all' onClick={() => filterSelection('all')}>All</a>
-        <a className='btn' id='css' onClick={() => filterSelection('css')}><FontAwesomeIcon icon={['fab', 'html5']} /> HTML /  <FontAwesomeIcon icon={['fab', 'css3']} /> CSS</a>
-        <a className='btn' id='react' onClick={() => filterSelection('react')}><FontAwesomeIcon icon={['fab', 'react']} /> React</a>
-        <a className='btn' id='d3' onClick={() => filterSelection('d3')}><Icon icon={d3Icon} /> D3</a>
+        <button type='button' className='btn btn--active' id='all' onClick={() => filterSelection('all')}>All</button>
+        <button type='button' className='btn' id='css' onClick={() => filterSelection('css')}><FontAwesomeIcon icon={['fab', 'html5']} /> HTML /  <FontAwesomeIcon icon={['fab', 'css3']} /> CSS</button>
+        <button type='button' className='btn' id='react' onClick={() => filterSelection('react')}><FontAwesomeIcon icon={['fab', 'react']} /> React</button>
+        <button type='button' className='btn' id='d3' onClick={() => filterSelection('d3')}><Icon icon={d3Icon} /> D3</button>
       </div>
 
       <div className='projects__gallery'>
