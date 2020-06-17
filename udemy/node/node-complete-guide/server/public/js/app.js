@@ -3,7 +3,7 @@ console.log('client side js');
 const fetchData = async (searchQuery) => {
   let result;
   try {
-    const resultJSON = await fetch(`http://localhost:3000/weather?address=${searchQuery}`);
+    const resultJSON = await fetch(`/weather?address=${searchQuery}`);
     result = await resultJSON.json();
     
   } catch (error) {
