@@ -1,0 +1,54 @@
+.Post {
+    background-color: white;
+    display: grid;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    gap: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Post a {
+    font-size: 2.4em;
+    float: left;
+    margin: 0 5px;
+}
+
+.Post button {
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    float: right;
+}
+
+.Post button:hover {
+    cursor: pointer;
+}
+
+.quote {
+    font-size: 1.2em;
+    font-weight: bold;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote:before {
+    content: open-quote;
+    font-size: 4em;
+    font-weight:400;
+    vertical-align: -0.2em;
+  }
+
+.quote:after {
+    content: close-quote;
+    font-size: 4em;
+    font-weight:400;
+    vertical-align: -0.8em;
+  }
+
+  .author {
+      float: right;
+      justify-self: right;
+  }
