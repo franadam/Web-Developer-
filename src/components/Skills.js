@@ -1,10 +1,11 @@
-import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
 
-function Skills () {
+const Skills = () => {
   return (
-    <div className='skills about__skills' id='skills'>
-      <h3 className='skills__header'>Scripting and Programming Language <br /> Skills</h3>
+    <div className="skills about__skills" id="skills">
+      <h3 className="skills__header">
+        Scripting and Programming Language <br /> Skills
+      </h3>
 
       <div className="skills__bar bar">
         <div className="bar__title bar__title--html">
@@ -47,9 +48,8 @@ function Skills () {
         </div>
         <div className="bar__percent bar__percent--python">85%</div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

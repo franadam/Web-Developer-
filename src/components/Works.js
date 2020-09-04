@@ -1,16 +1,15 @@
-import React from 'react'
-import Carousel from './Carousel'
-import Projects from './Projects'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import Carousel from './Carousel';
+import Projects from './Projects';
 
-function Works () {
+const Works = () => {
   return (
-    <div className='works' id='works'>
+    <div className="works" id="works">
       <h2>Works</h2>
       <Carousel />
       <Projects />
     </div>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;

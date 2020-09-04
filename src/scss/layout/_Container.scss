@@ -1,5 +1,6 @@
 .container {
   //border: 6px solid green;
+  flex-grow: 1;
   display: grid;
   grid-gap: 10px;
   margin: 0;
@@ -11,4 +12,3 @@
     grid-gap: 5px;
   }
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9Db250YWluZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBCQUEwQjtFQUMxQixjQUFjO0VBQ2QsZUFBZTtFQUNmLFVBQVU7RUFDVixXQUFXO0NBQ1o7O0FBRUQ7RUFDRTtJQUNFLGNBQWM7R0FDZjtDQUNGIiwiZmlsZSI6Il9Db250YWluZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIC8vYm9yZGVyOiA2cHggc29saWQgZ3JlZW47XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLWdhcDogMTBweDtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTAwcHgpIHtcclxuICAuY29udGFpbmVyIHtcclxuICAgIGdyaWQtZ2FwOiA1cHg7XHJcbiAgfVxyXG59XHJcbiJdfQ== */

@@ -1,17 +1,15 @@
-import React from 'react'
-import Skills from './Skills'
-import Introduction from './Introduction'
+import React from 'react';
+import Skills from './Skills';
+import Introduction from './Introduction';
 
-function About () {
+const About = () => {
   return (
-
-    <div className='about' id='about'>
+    <div className="about" id="about">
       <h2 className="about__header">About me</h2>
-      <Introduction/>
+      <Introduction />
       <Skills />
     </div>
+  );
+};
 
-  )
-}
-
-export default About
+export default About;
