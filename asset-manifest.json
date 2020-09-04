@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Web-Developer/static/css/main.e56e962a.chunk.css",
-    "main.js": "/Web-Developer/static/js/main.5acd2e32.chunk.js",
-    "main.js.map": "/Web-Developer/static/js/main.5acd2e32.chunk.js.map",
-    "runtime-main.js": "/Web-Developer/static/js/runtime-main.daec156c.js",
-    "runtime-main.js.map": "/Web-Developer/static/js/runtime-main.daec156c.js.map",
-    "static/js/2.47e26d40.chunk.js": "/Web-Developer/static/js/2.47e26d40.chunk.js",
-    "static/js/2.47e26d40.chunk.js.map": "/Web-Developer/static/js/2.47e26d40.chunk.js.map",
-    "index.html": "/Web-Developer/index.html",
-    "precache-manifest.ab6cc78efa4f173e3fa4966ecbfd0477.js": "/Web-Developer/precache-manifest.ab6cc78efa4f173e3fa4966ecbfd0477.js",
-    "service-worker.js": "/Web-Developer/service-worker.js",
-    "static/css/main.e56e962a.chunk.css.map": "/Web-Developer/static/css/main.e56e962a.chunk.css.map",
-    "static/js/2.47e26d40.chunk.js.LICENSE.txt": "/Web-Developer/static/js/2.47e26d40.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/Web-Developer/static/media/fa-solid-900.bea989e8.woff"
+    "main.css": "/fac-application/static/css/main.b096172d.chunk.css",
+    "main.js": "/fac-application/static/js/main.01334d0f.chunk.js",
+    "main.js.map": "/fac-application/static/js/main.01334d0f.chunk.js.map",
+    "runtime-main.js": "/fac-application/static/js/runtime-main.c7bdda14.js",
+    "runtime-main.js.map": "/fac-application/static/js/runtime-main.c7bdda14.js.map",
+    "static/js/2.1d6ee351.chunk.js": "/fac-application/static/js/2.1d6ee351.chunk.js",
+    "static/js/2.1d6ee351.chunk.js.map": "/fac-application/static/js/2.1d6ee351.chunk.js.map",
+    "index.html": "/fac-application/index.html",
+    "precache-manifest.84a08e87e132e8e5f0c6ed6384041548.js": "/fac-application/precache-manifest.84a08e87e132e8e5f0c6ed6384041548.js",
+    "service-worker.js": "/fac-application/service-worker.js",
+    "static/css/main.b096172d.chunk.css.map": "/fac-application/static/css/main.b096172d.chunk.css.map",
+    "static/js/2.1d6ee351.chunk.js.LICENSE.txt": "/fac-application/static/js/2.1d6ee351.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.daec156c.js",
-    "static/js/2.47e26d40.chunk.js",
-    "static/css/main.e56e962a.chunk.css",
-    "static/js/main.5acd2e32.chunk.js"
+    "static/js/runtime-main.c7bdda14.js",
+    "static/js/2.1d6ee351.chunk.js",
+    "static/css/main.b096172d.chunk.css",
+    "static/js/main.01334d0f.chunk.js"
   ]
 }
